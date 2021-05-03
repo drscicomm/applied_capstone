@@ -6,33 +6,28 @@ Introduction:
 Recently, there has been a massive influx of young people moving to and working in Toronto. A market analysis showed that these young singles are looking to move to neighborhoods with fun, modern bars that cater to the post-work crowd. The purpose of this project is to help these young professionals determine which neighborhoods they should live in that has the best happy hour spots, which are also affordable and easy to move into.
 
 The Problem:
-
 The major purpose of this project is to provide a list of neighborhoods in Toronto for young professionals looking to move to a place with great (and open) housing as well as a bustling nightlife. suggest a better neighborhood in a new city for the person who are shiffting there. We will also show locations and examples of where the young people may be working and proximity to the best happy hour spots.
 
 We will need:
-
 Sorted list of housing in terms of housing prices in a ascending or descending order Sorted list of bars and happy hours in terms of location, price, rating and reviews
 
-The Location: Toronto is a popular destination for new young professionals, both Canadian and American, to reside. It has a bustling nightlife and economy.
+The Location: 
+Toronto is a popular destination for new young professionals, both Canadian and American, to reside. It has a bustling nightlife and economy.
 
-Foursquare API: This project would use Four-square API as its prime data gathering source as it has a database of millions of places, especially their places API which provides the ability to perform location search, location sharing and details about a business.
+Foursquare API: 
+This project would use Four-square API as its prime data gathering source as it has a database of millions of places, especially their places API which provides the ability to perform location search, location sharing and details about a business.
 
-Work Flow: Using credentials of Foursquare API features of near-by places of the neighborhoods would be mined. Due to http request limitations the number of places per neighborhood parameter would reasonably be set to 100 and the radius parameter would be set to 500.
+Work Flow: 
+Using credentials of Foursquare API features of near-by places of the neighborhoods would be mined. Due to http request limitations the number of places per neighborhood parameter would reasonably be set to 100 and the radius parameter would be set to 500.
 
 Clustering Approach: To make recommendations on where to live, we explored, segmented, and clusted bars, open housing within neighborhoods and grouped them into clusters to make recommendations. To be able to do that, we need to cluster data which is a form of unsupervised machine learning: k-means clustering algorithm.
 
-Libraries Which are Used to Develope the Project: Pandas: For creating and manipulating dataframes.
-
+Libraries Which are Used to Develope the Project: 
+Pandas: For creating and manipulating dataframes.
 Folium: Python visualization library would be used to visualize the neighborhoods cluster distribution of using interactive leaflet map.
-
 Scikit Learn: For importing k-means clustering.
-
 JSON: Library to handle JSON files.
-
 XML: To separate data from presentation and XML stores data in plain text format.
-
 Geocoder: To retrieve Location Data.
-
 Beautiful Soup and Requests: To scrap and library to handle http requests.
-
 Matplotlib: Python Plotting Module.
